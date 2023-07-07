@@ -54,8 +54,9 @@ redirectButton.addEventListener('click', function() {
 });
 
 //task3
+
 //Створити цикл що буде створювати рядки
-//створити цикл що буде створювати комірки
+//створити цикл що буде створювати комірки в середині того,що створює рядки
 //змінна, яка за формулою буде фіксувати номер комірки, ітеруючись по кожному рядку переходити на новий десяток
 // (цю формулу не сама придумала, це якийсь ту мач складний левел для мене)
 //запушити комірку в рядок
@@ -77,3 +78,14 @@ for (let i = 1; i <= 10; i++) {
   
   table.appendChild(row);
 }
+
+//task4
+
+let imagesFolder = 'images/';
+let imageCount = 9; // Кількість зображень у папці
+let randomIndex = Math.floor(Math.random() * imageCount) + 1;
+let imagePath = imagesFolder + randomIndex + '.jpg';
+
+let randomImage = document.getElementById('randomImage');
+randomImage.src = imagePath;
+
