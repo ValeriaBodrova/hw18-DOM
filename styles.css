@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #myInput {
+    margin-right: 10px;
+  }
+  
+  #infoDiv {
+    background-color: lightgray;
+    padding: 10px;
+  }
