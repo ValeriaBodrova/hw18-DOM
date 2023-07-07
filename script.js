@@ -52,3 +52,28 @@ redirectButton.addEventListener('click', function() {
     window.location.href = link;
   }
 });
+
+//task3
+//Створити цикл що буде створювати рядки
+//створити цикл що буде створювати комірки
+//змінна, яка за формулою буде фіксувати номер комірки, ітеруючись по кожному рядку переходити на новий десяток
+// (цю формулу не сама придумала, це якийсь ту мач складний левел для мене)
+//запушити комірку в рядок
+//запушити рядок в таблицю
+
+let table = document.getElementById('table');
+
+for (let i = 1; i <= 10; i++) {
+  let row = document.createElement('tr');
+
+  
+  for (let j = 1; j <= 10; j++) {
+    let cell = document.createElement('td');
+  
+    let number = (i - 1) * 10 + j;
+    cell.textContent = number;
+    row.appendChild(cell);
+  }
+  
+  table.appendChild(row);
+}
